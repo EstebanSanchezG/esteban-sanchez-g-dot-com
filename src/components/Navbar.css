@@ -73,12 +73,33 @@
 }
 
 @media (max-width: 991.98px) {
+  .navbar-shell {
+    padding: 0.55rem 0.65rem 0;
+  }
+
   .bg-navbar {
+    width: min(100%, calc(100vw - 1.3rem));
     border-radius: 28px;
+    padding: 0.5rem 0.65rem;
+  }
+
+  .navbar-brand {
+    max-width: calc(100vw - 6.5rem);
+    font-size: 1.08rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .navbar-collapse {
     margin-top: 0.85rem;
+    max-height: calc(100dvh - 6rem);
+    overflow-y: auto;
+  }
+
+  .custom-nav-link {
+    width: 100%;
+    padding: 0.8rem 0.9rem !important;
   }
 
   .nav-resume-btn {

@@ -44,7 +44,7 @@ export default function Home(){
                             <p>I push beyond functionality toward structure, clarity, and polished execution.</p>
                         </article>
                     </div>
-                    <Link to="/Profile" className="btn btn-secondary">Learn more</Link>
+                    <Link to="/profile" className="btn btn-secondary">Learn more</Link>
                 </div>
             </section>
             <section id="home-timeline-preview">
@@ -103,7 +103,7 @@ export default function Home(){
                     <div className="demo-preview-area">
                         {/* Insert a test here */}
                     </div>
-                    <Link to="/demo" className="btn btn-secondary">Explore more</Link>
+                    <Link to="/demos" className="btn btn-secondary">Explore more</Link>
                 </div>
             </section>
             <section id="home-contact-preview">

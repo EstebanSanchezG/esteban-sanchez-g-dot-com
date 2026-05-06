@@ -28,6 +28,115 @@
   color: #61dafb;
 }
 
+.work-in-progress-page {
+  min-height: 100svh;
+  padding: 8.5rem 1rem 4rem;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(125, 158, 196, 0.16), transparent 28%),
+    linear-gradient(180deg, var(--dw-blue-900), var(--dw-blue-950));
+}
+
+.work-in-progress-content {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(260px, 0.72fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.work-in-progress-copy {
+  text-align: left;
+}
+
+.work-in-progress-eyebrow {
+  margin: 0 0 1rem;
+  color: var(--color-accent-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.work-in-progress-copy h1 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(3.6rem, 8vw, 7rem);
+  line-height: 0.95;
+}
+
+.work-in-progress-copy p:not(.work-in-progress-eyebrow) {
+  max-width: 680px;
+  margin: 1.4rem 0 0;
+  color: var(--color-text-soft);
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  line-height: 1.6;
+}
+
+.work-in-progress-visual {
+  min-height: clamp(260px, 34vw, 430px);
+  border: 1px dashed rgba(232, 238, 245, 0.22);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.035);
+  color: rgba(232, 238, 245, 0.48);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.work-in-progress-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 840px) {
+  .work-in-progress-page {
+    padding-top: 7.5rem;
+  }
+
+  .work-in-progress-content {
+    grid-template-columns: 1fr;
+  }
+
+  .work-in-progress-copy,
+  .work-in-progress-visual {
+    text-align: center;
+  }
+
+  .work-in-progress-copy p:not(.work-in-progress-eyebrow) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .work-in-progress-page {
+    padding: 7rem 0.8rem 3rem;
+  }
+
+  .work-in-progress-content {
+    gap: 1.5rem;
+  }
+
+  .work-in-progress-copy h1 {
+    font-size: clamp(3rem, 16vw, 4.4rem);
+  }
+
+  .work-in-progress-copy p:not(.work-in-progress-eyebrow) {
+    font-size: 1.05rem;
+  }
+
+  .work-in-progress-visual {
+    min-height: 220px;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,4 +145,3 @@
     transform: rotate(360deg);
   }
 }
-
