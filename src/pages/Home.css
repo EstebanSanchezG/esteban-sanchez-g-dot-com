@@ -1,0 +1,312 @@
+/* ---- Sections style ---- */
+/* #home-hero,
+#home-profile-preview,
+#home-timeline-preview,
+#home-demo-preview,
+#home-contact-preview {
+    width:100%;
+}
+
+#home-hero {
+    padding:9rem 10rem 6rem;
+    background: var(--dw-mist);
+}
+
+#home-profile-preview {
+    padding:5rem 6rem;
+    background: var(--dw-blue-950);
+}
+
+
+#home-timeline-preview {
+    padding:5rem 6rem;
+    background: var(--dw-blue-900);
+}
+
+
+#home-demo-preview {
+    padding:5rem 6rem;
+    background: var(--dw-blue-850);
+}
+
+#home-contact-preview {
+    padding:5rem 6rem;
+    background: var(--dw-blue-800);
+}
+
+.home-contact-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.contact-preview-text {
+    max-width: 42rem;
+    margin: 1rem 0 0;
+    color: var(--color-text-soft);
+    line-height: 1.7;
+}
+
+.contact-preview-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    #home-contact-preview {
+        padding: 4rem 1.5rem;
+    }
+
+    .home-contact-cta {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .contact-preview-actions {
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+
+ */
+
+/* ---- End Section Style ---- */
+/* ---------- Home page bands ---------- */
+
+#home-hero,
+#home-profile-preview,
+#home-timeline-preview,
+#home-demo-preview,
+#home-contact-preview {
+  width: 100%;
+}
+
+/* Hero band */
+#home-hero {
+  padding: 9rem 0 6rem;
+  background:
+    radial-gradient(circle at top right, rgba(125, 158, 196, 0.14), transparent 28%),
+    radial-gradient(circle at top left, rgba(74, 30, 43, 0.10), transparent 24%),
+    linear-gradient(180deg, var(--dw-blue-900), var(--dw-blue-950));
+}
+
+/* About/Profile preview band */
+#home-profile-preview {
+  padding: 5rem 0;
+  background: var(--dw-blue-850);
+}
+
+/* Timeline band */
+#home-timeline-preview {
+  padding: 5rem 0;
+  background: var(--dw-blue-900);
+}
+
+/* Demo band */
+#home-demo-preview {
+  padding: 5rem 0;
+  background: var(--dw-blue-800);
+}
+
+/* Contact band */
+#home-contact-preview {
+  padding: 5rem 0;
+  background:
+    linear-gradient(180deg, rgba(74, 30, 43, 0.10), rgba(125, 158, 196, 0.05)),
+    var(--dw-blue-900);
+}
+
+/* ---------- Shared layout ---------- */
+
+.home-container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.home-eyebrow,
+.section-eyebrow {
+  margin: 0 0 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent-primary);
+}
+
+.home-title {
+  max-width: 980px;
+  margin: 0 0 1rem;
+  font-size: clamp(2.7rem, 5vw, 4.8rem);
+  line-height: 1.05;
+  color: var(--color-text);
+}
+
+.home-subtitle,
+.profile-text,
+.section-text {
+  max-width: 800px;
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: var(--color-text-soft);
+}
+
+.section-header,
+.section-title {
+  margin: 0;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  line-height: 1.1;
+  color: var(--color-text);
+}
+
+/* Support both names for now */
+.section-header-row,
+.section-heading-row {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ---------- Cards / preview blocks ---------- */
+
+.preview-grid-three-col {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.preview-card {
+  padding: 1.4rem;
+  border: 1px solid var(--color-border);
+  border-radius: 22px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.02)
+    );
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+.preview-card h3 {
+  margin: 0 0 0.7rem;
+  font-size: 1.35rem;
+  color: var(--color-text);
+}
+
+.preview-card p {
+  margin: 0;
+  line-height: 1.7;
+  color: var(--color-text-soft);
+}
+
+/* ---------- Timeline ---------- */
+
+.timeline-preview-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.timeline-preview-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1.15rem 1.2rem;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.timeline-year {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent-primary);
+}
+
+.timeline-preview-item h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.timeline-preview-item p {
+  margin: 0;
+  line-height: 1.65;
+  color: var(--color-text-soft);
+}
+
+/* ---------- Home buttons ---------- */
+
+#home-profile-preview .btn,
+#home-timeline-preview .btn,
+#home-demo-preview .btn,
+#home-contact-preview .btn {
+  margin-top: 1.5rem;
+}
+
+.btn.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.85rem 1.3rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-text);
+  transform: translateY(-1px);
+}
+
+/* ---------- Optional placeholders for empty sections ---------- */
+
+#home-demo-preview:empty,
+#home-contact-preview:empty {
+  min-height: 260px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+  .preview-grid-three-col {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header-row,
+  .section-heading-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-preview-item {
+    grid-template-columns: 1fr;
+  }
+
+  #home-hero {
+    padding: 8rem 0 5rem;
+  }
+
+  #home-profile-preview,
+  #home-timeline-preview,
+  #home-demo-preview,
+  #home-contact-preview {
+    padding: 4rem 0;
+  }
+}
