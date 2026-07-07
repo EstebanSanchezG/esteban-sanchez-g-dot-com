@@ -24,5 +24,8 @@ During my time in undergrad, we had interesting projects that were linked direct
 
 AS a side tangeant on games. I actually know how to make games in Unity and in Unreal Engine, I was in a video game development contest in high school using Unreal and the node programming scheme. We got second place!
 
-So waht else is there in education. During my Masters, I have learned how to do ML using basic language and made a decision machine in ASP, I worked in pwncollege excercises to simulate phishing, injection, and OS hacking, I learned how to build my own firewall, a lot of classification algorithms, a big data analysis on long time use of a Glucose Monitor, and so much more. It has been fun and exciting.
+So whst else is there in education. During my Masters, I have learned how to do ML using basic language and made a decision machine in ASP, I worked in pwncollege excercises to simulate phishing, injection, and OS hacking, I learned how to build my own firewall, a lot of classification algorithms, a big data analysis on long time use of a Glucose Monitor, etc. DUring my masters, I am not soley focuised on achieching a higher form of education, I want to get certified, and I am certified now in Big Data, Software Engineering (CI/CD, Testing, Planning and Documentation), Cybersecurity and AI/ML. 
+
+## Other ventures ##
+Disciplined
 
