@@ -34,15 +34,17 @@ const timelineEntries: TimelineEntry[] = [
         id: "internship",
         period: "2022 - 2023",
         shortPeriod: "2022",
-        role: "GIS Grpahics Developer",
+        role: "GIS Graphics Developer",
         organization: "Development Monitors LLC",
         type: "Internship",
-        summary: "3D graphic rendering software for images with terrain elevation data obtained from drones or satellites.",
-        description: "Insert a description here.",
+        summary: "Interactive 3D terrain visualization using GIS elevation data, drone imagery, satellite sources, and Three.js.",
+        description:
+            "Built GIS-based terrain reconstruction tools that converted geospatial elevation data into interactive 3D environments for disaster risk analysis, infrastructure planning, and research-oriented decision support.",
         responsibilities:[
-            "Bullet Point 1.",
-            "Bullet Point 2.",
-            "Bullet Point 3.",
+            "Designed and implemented Three.js terrain rendering from TIFF-based geospatial elevation datasets.",
+            "Built data workflows to retrieve, normalize, and prepare satellite and drone-derived GIS inputs for visualization.",
+            "Contributed to disaster risk and infrastructure analysis work, including focused map-based planning for Taiz.",
+            "Mentored incoming interns and coordinated task handoff after being promoted into an assistant supervisor role.",
         ],
     },
     {

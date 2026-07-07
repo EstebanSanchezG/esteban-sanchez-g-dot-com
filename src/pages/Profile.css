@@ -1,0 +1,256 @@
+.profile-page {
+  background: var(--color-bg-page);
+  color: var(--color-text);
+}
+
+.profile-container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.profile-hero {
+  padding: 9rem 0 5.5rem;
+  background:
+    radial-gradient(circle at top right, rgba(125, 158, 196, 0.15), transparent 30%),
+    linear-gradient(180deg, var(--dw-blue-900), var(--dw-blue-950));
+}
+
+.profile-hero-grid,
+.profile-proof-grid,
+.profile-skills-grid,
+.profile-close-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.profile-eyebrow {
+  margin: 0 0 0.85rem;
+  color: var(--color-accent-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.profile-hero h1,
+.profile-section-heading h2,
+.profile-proof-grid h2,
+.profile-skills-grid h2,
+.profile-close-grid h2 {
+  margin: 0;
+  color: var(--color-text);
+  line-height: 1.06;
+}
+
+.profile-hero h1 {
+  max-width: 860px;
+  font-size: clamp(2.65rem, 5vw, 4.8rem);
+}
+
+.profile-lede {
+  max-width: 780px;
+  margin: 1.35rem 0 0;
+  color: var(--color-text-soft);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.profile-summary-panel {
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.profile-summary-panel div {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.profile-summary-panel div:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.profile-summary-panel span {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--color-accent-primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.profile-summary-panel strong {
+  display: block;
+  color: var(--color-text);
+  line-height: 1.45;
+}
+
+.profile-summary-panel p {
+  margin: 0.25rem 0 0;
+  color: var(--color-text-soft);
+  line-height: 1.55;
+}
+
+.profile-section {
+  padding: 5rem 0;
+  background: var(--dw-blue-900);
+}
+
+.profile-section-alt {
+  background: var(--dw-blue-850);
+}
+
+.profile-section-heading {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.profile-section-heading h2,
+.profile-proof-grid h2,
+.profile-skills-grid h2,
+.profile-close-grid h2 {
+  font-size: clamp(2rem, 3.4vw, 3rem);
+}
+
+.profile-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.profile-card {
+  min-height: 220px;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.profile-card h3 {
+  margin: 0 0 0.85rem;
+  color: var(--color-text);
+  font-size: 1.12rem;
+}
+
+.profile-card p,
+.profile-section-copy {
+  margin: 0;
+  color: var(--color-text-soft);
+  line-height: 1.7;
+}
+
+.profile-proof-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.profile-proof-item {
+  display: grid;
+  grid-template-columns: 0.8rem minmax(0, 1fr);
+  gap: 0.85rem;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.032);
+}
+
+.profile-proof-item span {
+  width: 0.48rem;
+  height: 0.48rem;
+  margin-top: 0.58rem;
+  border-radius: 50%;
+  background: var(--color-accent-primary);
+}
+
+.profile-proof-item p {
+  margin: 0;
+  color: var(--color-text-soft);
+  line-height: 1.65;
+}
+
+.profile-skill-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.profile-skill-cloud span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: rgba(232, 238, 245, 0.05);
+  color: var(--color-text);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.profile-close-section {
+  background:
+    linear-gradient(180deg, rgba(74, 30, 43, 0.12), rgba(125, 158, 196, 0.04)),
+    var(--dw-blue-900);
+}
+
+.profile-traits {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.profile-trait {
+  padding: 1rem 1.1rem;
+  border-left: 3px solid var(--color-accent-primary);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.profile-trait p {
+  margin: 0;
+  color: var(--color-text-soft);
+  line-height: 1.6;
+}
+
+@media (max-width: 920px) {
+  .profile-hero-grid,
+  .profile-proof-grid,
+  .profile-skills-grid,
+  .profile-close-grid,
+  .profile-focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .profile-container {
+    width: min(100% - 1.25rem, 1120px);
+  }
+
+  .profile-hero {
+    padding: 7.25rem 0 4rem;
+  }
+
+  .profile-section {
+    padding: 4rem 0;
+  }
+
+  .profile-hero h1 {
+    font-size: clamp(2.25rem, 11vw, 3.1rem);
+  }
+
+  .profile-lede,
+  .profile-section-copy {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
